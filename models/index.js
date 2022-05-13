@@ -7,18 +7,13 @@ const Sequelize = require("sequelize");
 // instantiate new instance of sequelize
 const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
   host: dbConfig.HOST,
-  dialect: dbConfig.dialect,
+  dialect: "postgres",
   // Prints out a massive object of DB meta data
   // logging: (...msg) => console.log(msg),
   // pool allows for multiple connection through the same route over a defined amount of time
   // i.e.- 3 users want to create a new article within the time defined by idle
   // a single connection is opened and used for all three users
-  pool: {
-    max: dbConfig.pool.max,
-    min: dbConfig.pool.min,
-    acquire: dbConfig.pool.acquire,
-    idle: dbConfig.pool.idle
-  }
+  pool: dbConfig.pool,
 });
 
 // create DB object for export

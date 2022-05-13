@@ -11,12 +11,6 @@ db.sequelize.sync().then(() => {
   console.log("DB connected");
 });
 
-// TODO Look into deployment configurations
-// Probably should just be deleted
-// db.sequelize.sync({force:true}).then(() => {
-//   console.log("Drop and re-sync happened successfully in PostgreSQL.")
-// });
-
 // configure cors options
 var corsOptions = {
   origin: "http://localhost:8081"
