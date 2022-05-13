@@ -1,0 +1,41 @@
+{
+  "name": "content-tracker-api",
+  "version": "1.0.0",
+  "description": "Backend code base for ContentTracker",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devstart": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdhowey/content-tracker-backend.git"
+  },
+  "keywords": [
+    "React",
+    "PostgreSQL",
+    "Express",
+    "TypeScript",
+    "Sequelize",
+    "Node"
+  ],
+  "author": "devhowey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdhowey/content-tracker-backend/issues"
+  },
+  "homepage": "https://github.com/mdhowey/content-tracker-backend#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.19.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
